@@ -7,7 +7,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-8 px-4 md:px-0">
       <div>
         <Link to="/" className="text-white hover:text-white no-underline font-bold">
-          JC
+          pawan
         </Link>
       </div>
       <nav>

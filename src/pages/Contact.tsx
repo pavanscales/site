@@ -12,18 +12,18 @@ const Contact = () => {
         <ul className="space-y-2">
           <li>
             <span className="text-gray-400">Email:</span>{' '}
-            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="mailto:pawanpediredla@gmail.com">pawanpediredla@gmail.com</a>
           </li>
           <li>
             <span className="text-gray-400">Twitter:</span>{' '}
-            <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
-              @username
+            <a href="https://x.com/pawanscales" target="_blank" rel="noopener noreferrer">
+              @pawanscales
             </a>
           </li>
           <li>
             <span className="text-gray-400">GitHub:</span>{' '}
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
-              github.com/username
+            <a href="https://github.com/pawanscales" target="_blank" rel="noopener noreferrer">
+              github.com/pawanscales
             </a>
           </li>
         </ul>
