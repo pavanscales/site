@@ -6,7 +6,7 @@ const Home = () => {
     <div className="space-y-8">
       <h1 className="text-2xl font-bold mb-4">Pawan Pediredla </h1>
       <p className="mb-6">
-        I'm a Core contributor at  <a href="
+        I'm a  Contributor at  <a href="
         " className="font-medium">Cal.com.</a> I like building and scaling
         impactful products.</p>
     <p>
