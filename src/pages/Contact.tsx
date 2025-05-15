@@ -16,7 +16,7 @@ const Contact = () => {
           </li>
           <li>
             <span className="text-gray-400">Twitter:</span>{' '}
-            <a href="https://x.com/pawanscales" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/pavanscales" target="_blank" rel="noopener noreferrer">
               @pawanscales
             </a>
           </li>
