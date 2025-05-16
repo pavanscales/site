@@ -1,7 +1,5 @@
-
 import React from 'react';
 import Header from '../components/Header';
-
 const Contact = () => {
   return (
     <div className="min-h-screen bg-black text-white max-w-2xl mx-auto px-4 md:px-0">
@@ -17,13 +15,13 @@ const Contact = () => {
           <li>
             <span className="text-gray-400">Twitter:</span>{' '}
             <a href="https://x.com/pavanscales" target="_blank" rel="noopener noreferrer">
-              @pawanscales
+              @pavanscales
             </a>
           </li>
           <li>
             <span className="text-gray-400">GitHub:</span>{' '}
             <a href="https://github.com/pawanscales" target="_blank" rel="noopener noreferrer">
-              github.com/pawanscales
+              github.com/pavanscales
             </a>
           </li>
         </ul>
