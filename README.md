@@ -1,38 +1,34 @@
-Got it — here’s a simple, no-fluff README template for your Next.js + Tailwind + Vercel project:
 
 ````markdown
-# Portfolio Site
-
+# Pavanscales Portfolio Site
 ## Tech Stack
-- Next.js
-- Tailwind CSS
-- Vercel (Deployment & Analytics)
-- TypeScript
-- React Query
-- Radix UI
-
+- Next.js  
+- Tailwind CSS  
+- Vercel (Deployment & Analytics)  
+- TypeScript  
+- React Query  
+- Radix UI  
 ## Requirements
-- Node.js v18.17+
-- pnpm
-
-## Setup
+- Node.js v18.17+  
+- pnpm package manager  
+## Setup & Run Locally
 ```bash
 git clone https://github.com/lpavanscales/pavanscales.git
-cd pavansacles
+cd pavanscales
 pnpm install
-pnpm run delete # Remove personal notes
-pnpm dev
+pnpm run delete   # Optional: Remove personal notes
+pnpm dev          # Start dev server
 ````
 
-## Optional Database
+## Optional Database Setup
 
-Create `.env.local` with:
+Create a `.env.local` file in the root with:
 
 ```
 POSTGRES_URL=your_database_url
 ```
 
-Create `redirects` table:
+Create the redirects table in your Postgres database:
 
 ```sql
 CREATE TABLE redirects (
@@ -43,21 +39,20 @@ CREATE TABLE redirects (
 );
 ```
 
-## Scripts
+## Available Scripts
 
-* `pnpm dev` - run dev server
-* `pnpm build` - build app
-* `pnpm preview` - preview production build
-* `pnpm run delete` - remove personal data
-* `pnpm lint` - run linter
+* `pnpm dev` — Start development server
+* `pnpm build` — Build production-ready app
+* `pnpm preview` — Preview production build locally
+* `pnpm run delete` — Remove personal data
+* `pnpm lint` — Run ESLint
 
 ## Deployment
 
-Deploy on Vercel by connecting repo.
-
----
-
-Use for inspiration only. Credit appreciated.
+Deploy easily on [Vercel](https://vercel.com/) by connecting your GitHub repository.
+Use this project for inspiration only. Credit to the original author is appreciated.
 
 ```
 
+Just copy this whole block into your README.md — done!
+```
