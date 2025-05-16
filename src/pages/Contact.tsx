@@ -20,7 +20,7 @@ const Contact = () => {
           </li>
           <li>
             <span className="text-gray-400">GitHub:</span>{' '}
-            <a href="https://github.com/pawanscales" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/pavanscales" target="_blank" rel="noopener noreferrer">
               github.com/pavanscales
             </a>
           </li>
