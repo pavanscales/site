@@ -7,7 +7,6 @@ const Home = () => {
       <h1 className="text-2xl font-bold">Pawan Pediredla</h1>
 
       <p>
-        contributor at <a href="https://cal.com" className="font-medium" target="_blank" rel="noreferrer">cal.com</a>. 
         focus on core engineering. no fluff. just systems, tools, and performance.  
         stack: typescript, next.js, golang, rust, node.js.  
         tools: vim, unix, low-level apis.  
