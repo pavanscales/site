@@ -1,10 +1,10 @@
 import React from 'react';
 
 const projects = [
-    { title: 'no fluff', desc: 'connects devs to real problems worth solving.', url: 'https://nofulff.vercel.app/', label: '[site]' },
+    { title: 'no fluff', desc: 'connects devs to real problems worth solving.', url: 'https://nofluff.vercel.app', label: '[site]' },
 
   { title: 'jpeg encoder', desc: 'wrote a fast jpeg encoder in pure JS.', url: 'https://github.com/pawanscales/jpeg_encoder', label: '[code]' },
-    { title: 'tool-lingo', desc: 'curated, no-bloat, browser-based tools.', url: 'https://tool-lingo.vercel.app/', label: '[site]' },
+    { title: 'tool-lingo', desc: 'curated, no-bloat, browser-based tools.', url: 'https://tool-lingo.vercel.app', label: '[site]' },
   { title: 'alumni.meet', desc: 'alumni–freshers connect platform, SIH hackathon', url: 'https://github.com/pawanscales/random', label: '[code]' },
 ];
 
