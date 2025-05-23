@@ -44,7 +44,6 @@ const Home = () => {
 
       <p className="text-sm text-gray-600">
         github: <a href="https://github.com/pavanscales" className="font-medium" target="_blank" rel="noreferrer">pavanscales</a>  
-        | site: <a href="https://pavanscales.vercel.app" className="font-medium" target="_blank" rel="noreferrer">pavanscales.vercel.app</a>
       </p>
     </div>
   );
