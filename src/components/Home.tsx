@@ -1,11 +1,11 @@
 import React from 'react';
 
 const projects = [
+    { title: 'no fluff', desc: 'connects devs to real problems worth solving.', url: 'https://nofulff.vercel.app/', label: '[site]' },
+
   { title: 'jpeg encoder', desc: 'wrote a fast jpeg encoder in pure JS.', url: 'https://github.com/pawanscales/jpeg_encoder', label: '[code]' },
-  { title: 'no fluff', desc: 'connects devs to real problems worth solving.', url: 'https://nofulff.vercel.app/', label: '[site]' },
     { title: 'tool-lingo', desc: 'curated, no-bloat, browser-based tools.', url: 'https://tool-lingo.vercel.app/', label: '[site]' },
-  { title: 'alumni.meet', desc: 'alumni–freshers connect platform, SIH hackathon', url: 'https://github.com/pawanscales/codeforces', label: '[code]' },
-  { title: 'stripe.regional', desc: 'SDK for regional stripe payments', url: 'https://github.com/pawanscales/stripe_regional_payment_acceralator', label: '[code]' },
+  { title: 'alumni.meet', desc: 'alumni–freshers connect platform, SIH hackathon', url: 'https://github.com/pawanscales/random', label: '[code]' },
 ];
 
 const Home = () => (
