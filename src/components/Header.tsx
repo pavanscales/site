@@ -2,28 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const links = [
-  { to: '/blog', label: 'blog' },
+  { to: '/stack', label: 'stack' },
   { to: '/contact', label: 'contact' },
 ];
 
 const Header = () => (
-  <header className="flex justify-between items-center py-8 px-4 md:px-0">
+  <header className="flex justify-between items-center py-7 px-3 md:px-0">
     <div>
       <Link to="/" className="text-white hover:text-white no-underline font-bold">
-        pawan
+        Pavan  :)
       </Link>
     </div>
     <nav>
-      <ul className="flex items-center space-x-4 text-white">
+      <ul className="flex items-center text-white">
         {links.map(({ to, label }, i) => (
-          <React.Fragment key={to}>
-            {i > 0 && <li>/</li>}
-            <li>
-              <Link to={to} className="hover:text-white no-underline">
-                {label}
-              </Link>
-            </li>
-          </React.Fragment>
+          <li key={to} className="flex items-center">
+            {i > 0 && <span className="mx-2 text-gray-400 select-none">/</span>}
+            <Link to={to} className="hover:text-white no-underline">
+              {label}
+            </Link>
+          </li>
         ))}
       </ul>
     </nav>

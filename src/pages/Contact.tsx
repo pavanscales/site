@@ -6,7 +6,6 @@ const contacts = [
   { label: 'Twitter', href: 'https://x.com/pavanscales', text: '@pavanscales', external: true },
   { label: 'GitHub', href: 'https://github.com/pavanscales', text: 'github.com/pavanscales', external: true },
 ];
-
 const Contact = () => (
   <div className="min-h-screen bg-black text-white max-w-2xl mx-auto px-4 md:px-0">
     <Header />
@@ -21,7 +20,7 @@ const Contact = () => (
               href={href}
               {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className="underline"
-            >
+              >
               {text}
             </a>
           </li>
