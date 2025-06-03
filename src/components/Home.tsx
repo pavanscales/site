@@ -27,7 +27,7 @@ const Home: React.FC = () => (
       <a href="https://cal.com" className="font-medium underline Q" target="_blank" rel="noreferrer">
         @calcom
       </a>{' '}
-      — rebuilding the web’s backend.<br />
+      .<br />
       architecting a custom JS runtime, lightweight React server framework,<br />
       RPC transport layer, and edge-native infra. engineered for scale.
     </p>
