@@ -6,32 +6,60 @@ type Project = {
   url: string;
   label: string;
 };
+
 const projects: Project[] = [
-  { title: 'no fluff', desc: 'connects devs to real problems worth solving.', url: 'https://nofluff.vercel.app', label: '[site]' },
-  { title: 'jpeg encoder', desc: 'fast JPEG encoder in pure JS.', url: 'https://github.com/pavanscales/jpeg.encoder', label: '[code]' },
-  { title: 'alumni.meet', desc: 'alumni–freshers connect platform. SIH hackathon.', url: 'https://github.com/pavanscales/random', label: '[code]' },
+  {
+    title: 'no fluff',
+    desc: 'platform connecting devs with real-world, high-leverage problems.',
+    url: 'https://nofluff.vercel.app',
+    label: '[site]',
+  },
+  {
+    title: 'jpeg encoder',
+    desc: 'ultra-fast JPEG encoder built in pure JavaScript.',
+    url: 'https://github.com/pavanscales/jpeg.encoder',
+    label: '[code]',
+  },
+  {
+    title: 'alumni.meet',
+    desc: 'SIH Hackathon winner. bridges alumni and freshers via smart matchmaking.',
+    url: 'https://github.com/pavanscales/random',
+    label: '[code]',
+  },
 ];
+
 const Home: React.FC = () => (
   <div className="space-y-5">
-    <h1 className="text-xl font-semibold">ceo @m0.dev, @rizzmegle</h1>
+    <h1 className="text-xl font-semibold">CEO @m0.dev — building @rizzmegle</h1>
+
     <p>
-      full-stack engineer. low-level systems programmer.<br />
-      building high-performance infra, runtimes, and internal tools.<br />
-      focus: clean code, max efficiency, zero bloat.
+      Full-stack engineer & low-level systems hacker.<br />
+      I architect performant infra, custom runtimes, and internal dev tools.<br />
+      My focus: clean abstractions, extreme efficiency, zero noise.
     </p>
+
     <p>
-      tools: Vim, Unix, LL APIs. shipping systems, not just UIs.
+      Power tools: Vim, Unix philosophy, low-level APIs.<br />
+      I don’t just build UIs — I ship resilient systems.
     </p>
+
     <p>
-      oss{' '}
-      <a href="https://cal.com" className="font-medium underline Q" target="_blank" rel="noreferrer">
-        @calcom
-      </a>{' '}
+      OSS @{' '}
+      <a
+        href="https://cal.com"
+        className="font-medium underline"
+        target="_blank"
+        rel="noreferrer"
+      >
+        cal.com
+      </a>
       .<br />
-      architecting a custom JS runtime, lightweight React server framework,<br />
-      RPC transport layer, and edge-native infra. engineered for scale.
+      Currently engineering a custom JavaScript runtime, a lean React server framework,<br />
+      an RPC transport layer, and edge-native infra — built to scale beyond limits.
     </p>
-    <p className="font-medium">things i've built:</p>
+
+    <p className="font-medium">Projects I've built:</p>
+
     <ul className="list-disc list-inside space-y-2 ml-4">
       {projects.map(({ title, desc, url, label }) => (
         <li key={title}>
@@ -42,12 +70,19 @@ const Home: React.FC = () => (
         </li>
       ))}
     </ul>
+
     <p className="text-sm text-gray-600">
-      github:{' '}
-      <a href="https://github.com/pavanscales" className="font-medium" target="_blank" rel="noreferrer">
-        pavanscales
+      GitHub:{' '}
+      <a
+        href="https://github.com/pavanscales"
+        className="font-medium"
+        target="_blank"
+        rel="noreferrer"
+      >
+        @pavanscales
       </a>
     </p>
   </div>
 );
+
 export default Home;

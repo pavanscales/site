@@ -10,7 +10,7 @@ const Header = () => (
   <header className="flex justify-between items-center py-7 px-3 md:px-0">
     <div>
       <Link to="/" className="text-white hover:text-white no-underline font-bold">
-        Pavan  :)
+        PAVAN
       </Link>
     </div>
     <nav>
