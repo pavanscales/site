@@ -6,18 +6,17 @@ const links = [
   { to: '/contact', label: 'contact' },
 ];
 
-const Header = () => (
+const Header: React.FC = () => (
   <header className="flex justify-between items-center py-7 px-3 md:px-0">
-    <div>
-      <Link to="/" className="text-white hover:text-white no-underline font-bold">
-        PAVAN
-      </Link>
-    </div>
+    <Link to="/" className="text-white hover:text-white font-bold no-underline">
+      PAVAN
+    </Link>
+
     <nav>
       <ul className="flex items-center text-white">
-        {links.map(({ to, label }, i) => (
+        {links.map(({ to, label }, idx) => (
           <li key={to} className="flex items-center">
-            {i > 0 && <span className="mx-2 text-gray-400 select-none">/</span>}
+            {idx > 0 && <span className="mx-2 text-gray-400 select-none">/</span>}
             <Link to={to} className="hover:text-white no-underline">
               {label}
             </Link>
