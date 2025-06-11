@@ -39,7 +39,7 @@ const ProjectItem: React.FC<Project> = ({ title, desc, url, label }) => (
 
 const Home: React.FC = () => (
   <div className="space-y-5">
-    <h1 className="text-xl font-semibold">ceo @m0.dev, @rizzmegle</h1>
+    {/* <h1 className="text-xl font-semibold">ceo @m0.dev, @rizzmegle</h1> */}
 
     <p>
       Full-stack engineer & low-level systems hacker. I architect performant infra, custom runtimes,
