@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 export default {
 	darkMode: ["class"],
 	content: [
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+      sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+    },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
