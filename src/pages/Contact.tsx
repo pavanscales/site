@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const contacts = [
   { label: 'Email', href: 'mailto:pawanpediredla@gmail.com', text: 'pawanpediredla@gmail.com' },
-  { label: 'Twitter', href: 'https://x.com/red_isgoat', text: 'red_isgoat', external: true },
+  { label: 'Twitter', href: 'https://x.com/red1exc', text: 'red', external: true },
   { label: 'GitHub', href: 'https://github.com/pavanscales', text: 'github.com/pavanscales', external: true },
 ];
 const Contact = () => (
