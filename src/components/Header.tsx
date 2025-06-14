@@ -20,8 +20,7 @@ const Header: React.FC = () => {
         className="text-white text-2xl md:text-3xl font-extrabold tracking-tight hover:opacity-90 transition duration-200"
         style={{ fontFamily: `'JetBrains Mono', monospace` }}
       >
-        Pavan
-      </Link>
+pavan      </Link>
 
       <nav className="flex items-center space-x-4 md:space-x-6 text-sm font-medium text-neutral-400">
         {links.map(({ to, label }) => (
