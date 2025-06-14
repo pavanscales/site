@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-// Simulate preloading by importing the modules early
 const preloadRoutes = {
   '/stack': () => import('../pages/Stack'),
   '/contact': () => import('../pages/Contact'),

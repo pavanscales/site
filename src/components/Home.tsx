@@ -29,7 +29,7 @@ const projects: Project[] = [
 ];
 
 const beliefs: string[] = [
- "Government feels encryption is illegal.",
+  "Government feels encryption is illegal.",
   "Speed beats perfection. Shipping fast creates momentum.",
   "Progress over plans. Culture should reward output.",
   "Small teams move quicker and think sharper.",
@@ -51,7 +51,7 @@ const beliefs: string[] = [
   "Lead with empathy. Assume positive intent.",
   "Own your story — even the failures.",
   "Open source is leverage. You grow by giving first.",
-  "Remote work isn’t a perk. It’s the new default for global builders."
+  "Remote work isn’t a perk. It’s the new default for global builders.",
 ];
 
 const ProjectItem: React.FC<Project> = ({ title, desc, url, label }) => (
@@ -70,18 +70,18 @@ const ProjectItem: React.FC<Project> = ({ title, desc, url, label }) => (
 
 const Home: React.FC = () => (
   <div
-    className="space-y-6 px-4 md:px-8 py-8 text-white"
+    className="px-4 md:px-8 py-8 text-white max-w-screen-md ml-2"
     style={{ fontFamily: `'JetBrains Mono', monospace` }}
   >
-    <p>
+    <p className="mb-4">
       Full-stack engineer & low-level systems hacker. I architect performant infra, custom runtimes, and internal dev tools. Focused on clean abstractions, extreme efficiency, and zero noise.
     </p>
 
-    <p>
+    <p className="mb-4">
       Power tools: Vim, Unix philosophy, low-level APIs. I don’t just build UIs — I ship resilient systems.
     </p>
 
-    <p>
+    <p className="mb-8">
       Hacker @{' '}
       <a
         href="https://cal.com"
@@ -93,8 +93,8 @@ const Home: React.FC = () => (
       </a>. Currently engineering a custom JS runtime, lean React server framework, RPC layer, and edge-native infra.
     </p>
 
-    <section>
-      <p className="font-medium text-white">Selected Projects:</p>
+    <section className="mb-8">
+      <p className="font-medium text-white mb-2">Selected Projects:</p>
       <ul className="list-disc list-inside space-y-2 ml-4">
         {projects.map((project) => (
           <ProjectItem key={project.title} {...project} />
@@ -102,8 +102,8 @@ const Home: React.FC = () => (
       </ul>
     </section>
 
-    <section>
-      <p className="font-medium text-white">What I believe:</p>
+    <section className="mb-8">
+      <p className="font-medium text-white mb-2">What I believe:</p>
       <ul className="list-disc list-inside space-y-1 ml-4">
         {beliefs.map((belief, idx) => (
           <li key={idx} className="text-white">{belief}</li>
@@ -111,7 +111,7 @@ const Home: React.FC = () => (
       </ul>
     </section>
 
-    <p className="text-sm text-gray-400">
+    <p className="text-sm text-gray-400 mb-1">
       GitHub:{' '}
       <a
         href="https://github.com/pavanscales"
