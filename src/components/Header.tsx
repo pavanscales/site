@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+// Simulate preloading by importing the modules early
+const preloadRoutes = {
+  '/stack': () => import('../pages/Stack'),
+  '/contact': () => import('../pages/Contact'),
+};
+
 const links = [
   { to: '/stack', label: 'Stack' },
   { to: '/contact', label: 'Contact' },
@@ -20,7 +26,8 @@ const Header: React.FC = () => {
         className="text-white text-2xl md:text-3xl font-extrabold tracking-tight hover:opacity-90 transition duration-200"
         style={{ fontFamily: `'JetBrains Mono', monospace` }}
       >
-pavan      </Link>
+        pavan
+      </Link>
 
       <nav className="flex items-center space-x-4 md:space-x-6 text-sm font-medium text-neutral-400">
         {links.map(({ to, label }) => (
@@ -28,6 +35,7 @@ pavan      </Link>
             key={to}
             to={to}
             className="hover:text-white transition duration-150"
+            onMouseEnter={() => preloadRoutes[to]?.()}
           >
             {label}
           </Link>
