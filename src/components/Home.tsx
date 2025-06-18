@@ -90,7 +90,7 @@ const Home: React.FC = () => (
         rel="noreferrer"
       >
         cal.com
-      </a>. Currently engineering a custom JS runtime, lean React server framework, RPC layer, and edge-native infra.
+      </a>. Currently engineering  lean React server framework, RPC layer, and edge-native infra.
     </p>
 
     <section className="mb-8">
