@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type Project = {
   title: string;
@@ -9,22 +9,22 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'no fluff',
-    desc: 'Platform connecting developers with real-world, high-leverage problems.',
-    url: 'https://nofluff.vercel.app',
-    label: '[site]',
+    title: "no fluff",
+    desc: "Platform connecting developers with real-world, high-leverage problems.",
+    url: "https://nofluff.vercel.app",
+    label: "site",
   },
   {
-    title: 'jpeg encoder',
-    desc: 'Ultra-fast JPEG encoder built in pure JavaScript.',
-    url: 'https://github.com/pavanscales/jpeg.encoder',
-    label: '[code]',
+    title: "jpeg encoder",
+    desc: "Ultra-fast JPEG encoder built in pure JavaScript.",
+    url: "https://github.com/pavanscales/jpeg.encoder",
+    label: "code",
   },
   {
-    title: 'alumni.meet',
-    desc: 'SIH Hackathon winner. Bridges alumni and freshers through smart matchmaking.',
-    url: 'https://github.com/pavanscales/random',
-    label: '[code]',
+    title: "alumni.meet",
+    desc: "SIH Hackathon winner. Bridges alumni and freshers through smart matchmaking.",
+    url: "https://github.com/pavanscales/random",
+    label: "code",
   },
 ];
 
@@ -56,10 +56,10 @@ const beliefs: string[] = [
 
 const ProjectItem: React.FC<Project> = ({ title, desc, url, label }) => (
   <li className="text-white">
-    <strong>{title}</strong> — {desc}{' '}
+    <strong>{title}</strong> — {desc}{" "}
     <a
       href={url}
-      className="ml-1 font-medium underline hover:text-gray-300 transition"
+      className="ml-2 text-xs px-2 py-0.5 rounded bg-blue-800 text-white hover:bg-blue-700 font-mono transition"
       target="_blank"
       rel="noreferrer"
     >
@@ -82,15 +82,16 @@ const Home: React.FC = () => (
     </p>
 
     <p className="mb-8">
-      Hacker @{' '}
+      Hacker @{" "}
       <a
         href="https://cal.com"
-        className="font-medium underline hover:text-gray-300 transition"
+        className="text-blue-400 hover:underline transition"
         target="_blank"
         rel="noreferrer"
       >
         cal.com
-      </a>. Currently engineering  lean React server framework, RPC layer, and edge-native infra.
+      </a>
+      . Currently engineering lean React server framework, RPC layer, and edge-native infra.
     </p>
 
     <section className="mb-8">
@@ -106,16 +107,18 @@ const Home: React.FC = () => (
       <p className="font-medium text-white mb-2">What I believe:</p>
       <ul className="list-disc list-inside space-y-1 ml-4">
         {beliefs.map((belief, idx) => (
-          <li key={idx} className="text-white">{belief}</li>
+          <li key={idx} className="text-white">
+            {belief}
+          </li>
         ))}
       </ul>
     </section>
 
     <p className="text-sm text-gray-400 mb-1">
-      GitHub:{' '}
+      GitHub:{" "}
       <a
         href="https://github.com/pavanscales"
-        className="font-medium underline hover:text-gray-300 transition"
+        className="hover:underline text-blue-400 transition"
         target="_blank"
         rel="noreferrer"
       >
