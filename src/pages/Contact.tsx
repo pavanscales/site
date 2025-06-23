@@ -11,7 +11,7 @@ const Contact = () => {
     {
       label: 'Twitter',
       href: 'https://x.com/pavanscales',
-      text: 'red',
+      text: 'pavanscales',
       external: true,
     },
     {
