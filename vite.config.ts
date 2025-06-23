@@ -8,9 +8,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
 
   resolve: {
@@ -20,15 +21,32 @@ export default defineConfig(({ mode }) => ({
   },
 
   build: {
-    target: "esnext", // use modern JS output for better compression
-    minify: "esbuild", // esbuild is faster and smaller than terser
-    sourcemap: false, // remove source maps in prod
-    cssCodeSplit: true, // split CSS for faster initial paint
-    brotliSize: true, // helpful for checking real-world gzip/brotli size
-    assetsInlineLimit: 4096, // inline small assets (icons, fonts <4kb)
+    target: "esnext",
+    minify: "esbuild",
+    sourcemap: false,
+    cssCodeSplit: true,
+    brotliSize: true,
+    assetsInlineLimit: 4096,
+
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split vendor code into its own chunk
+          vendor: [
+            "react",
+            "react-dom",
+            "react-router-dom",
+            "@tanstack/react-query",
+          ],
+        },
+        chunkFileNames: "assets/js/[name]-[hash].js",
+        entryFileNames: "assets/js/[name]-[hash].js",
+        assetFileNames: "assets/[ext]/[name]-[hash].[ext]",
+      },
+    },
   },
 
   optimizeDeps: {
-    include: ["react", "react-dom"],
+    include: ["react", "react-dom", "react-router-dom", "@tanstack/react-query"],
   },
 }));
