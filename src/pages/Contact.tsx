@@ -10,7 +10,7 @@ const Contact = () => {
     },
     {
       label: 'Twitter',
-      href: 'https://x.com/red1exc',
+      href: 'https://x.com/pavanscales',
       text: 'red',
       external: true,
     },
