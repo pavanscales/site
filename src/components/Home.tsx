@@ -9,6 +9,26 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "building blocks",
+    desc: "Clean, modern components. Copy-paste into your apps. Works with all React frameworks. Open Source. Free forever.",
+    url: "https://github.com/pavanscales/blocks", // placeholder – update if needed
+    label: "code",
+  },
+  {
+    title: "your calendar, reimagined",
+    desc: "The open-source Google Calendar alternative with AI features. Privacy-focused, client-first, and completely under your control.",
+    url: "weekday.vercel.app", // placeholder – update if needed
+    label: "code",
+  },
+  {
+    title: "voidrsc",
+    desc: "A full-stack framework from scratch, benchmarked faster than Next.js. Designed for edge-first modern apps.",
+    url: "https://github.com/pavanscales/voidrsc", // placeholder – update if needed
+    label: "code",
+  },
+
+  // Existing projects
+  {
     title: "no fluff",
     desc: "Platform connecting developers with real-world, high-leverage problems.",
     url: "https://nofluff.vercel.app",
@@ -22,7 +42,7 @@ const projects: Project[] = [
   },
   {
     title: "alumni.meet",
-    desc: "SIH Hackathon winner. Bridges alumni and freshers through smart matchmaking.",
+    desc: "SIH Hackathon. Bridges alumni and freshers through smart matchmaking.",
     url: "https://github.com/pavanscales/random",
     label: "code",
   },
