@@ -4,22 +4,22 @@ import Header from '@/components/Header';
 const Stack: React.FC = () => {
   return (
     <div
-      className="min-h-screen bg-black text-white max-w-2xl mx-auto px-4 md:px-0 space-y-6 text-base leading-relaxed"
+      className="px-4 md:px-8 py-8 text-white max-w-screen-md ml-2"
       style={{ fontFamily: `'JetBrains Mono', monospace` }}
     >
       <Header />
 
-      <h1 className="text-3xl font-bold mt-6">My Stack</h1>
+      <h1 className="text-3xl font-bold mb-4">My Stack</h1>
 
-      <p>
+      <p className="mb-6">
         This is the stack I’ve iterated on over time — built for speed, type safety, DX, and long-term maintainability.
         Every tool here is chosen with intention to ship fast and scale confidently.
       </p>
 
       {/* 1. Framework */}
-      <section>
-        <p className="font-medium">1. Framework (Next.js + React):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">1. Framework (Next.js + React):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             <a href="https://nextjs.org" className="underline" target="_blank" rel="noreferrer">
               Next.js 14
@@ -49,9 +49,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 2. Styling */}
-      <section>
-        <p className="font-medium">2. Styling (Tailwind CSS + shadcn/ui):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">2. Styling (Tailwind CSS + shadcn/ui):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             <a href="https://tailwindcss.com" className="underline" target="_blank" rel="noreferrer">
               Tailwind CSS
@@ -66,17 +66,16 @@ const Stack: React.FC = () => {
             — gives me composable building blocks on top of{' '}
             <a href="https://www.radix-ui.com" className="underline" target="_blank" rel="noreferrer">
               Radix UI
-            </a>
-            , without sacrificing accessibility.
+            </a>, without sacrificing accessibility.
           </li>
           <li>Everything is theme-ready, dark-mode enabled, and mobile-first.</li>
         </ul>
       </section>
 
       {/* 3. Database */}
-      <section>
-        <p className="font-medium">3. Database (PostgreSQL + Drizzle):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">3. Database (PostgreSQL + Drizzle):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>PostgreSQL — rock-solid SQL with support for JSON, indexing, and concurrency.</li>
           <li>
             <a href="https://orm.drizzle.team" className="underline" target="_blank" rel="noreferrer">
@@ -95,9 +94,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 4. API & Backend */}
-      <section>
-        <p className="font-medium">4. API & Backend (tRPC + Edge):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">4. API & Backend (tRPC + Edge):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>tRPC — removes the friction of OpenAPI/GraphQL when working with TypeScript-only teams.</li>
           <li>
             Running on{' '}
@@ -114,9 +113,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 5. Tooling */}
-      <section>
-        <p className="font-medium">5. Tooling & Infra (DX-oriented):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">5. Tooling & Infra (DX-oriented):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             <a href="https://bun.sh" className="underline" target="_blank" rel="noreferrer">
               Bun
@@ -149,9 +148,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 6. AI */}
-      <section>
-        <p className="font-medium">6. AI Tools (Velocity Boosters):</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">6. AI Tools (Velocity Boosters):</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             <a href="https://v0.dev" className="underline" target="_blank" rel="noreferrer">
               v0.dev
@@ -168,9 +167,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 7. Testing */}
-      <section>
-        <p className="font-medium">7. Testing Strategy:</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">7. Testing Strategy:</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             <a href="https://playwright.dev" className="underline" target="_blank" rel="noreferrer">
               Playwright
@@ -187,9 +186,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 8. CI/CD */}
-      <section>
-        <p className="font-medium">8. CI/CD:</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">8. CI/CD:</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             Deploys via{' '}
             <a href="https://vercel.com" className="underline" target="_blank" rel="noreferrer">
@@ -207,9 +206,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 9. Platforms */}
-      <section>
-        <p className="font-medium">9. Platforms:</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">9. Platforms:</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>Next.js (web-first)</li>
           <li>
             <a href="https://expo.dev" className="underline" target="_blank" rel="noreferrer">
@@ -224,9 +223,9 @@ const Stack: React.FC = () => {
       </section>
 
       {/* 10. Coding Philosophy */}
-      <section>
-        <p className="font-medium">10. Coding Philosophy:</p>
-        <ul className="list-disc list-inside space-y-1 ml-4">
+      <section className="mb-6">
+        <p className="font-medium mb-2">10. Coding Philosophy:</p>
+        <ul className="list-disc list-inside space-y-1 ml-4 text-white">
           <li>
             State: <code>let</code> over <code>const</code> — prepare for future transitions.
           </li>
@@ -236,13 +235,13 @@ const Stack: React.FC = () => {
         </ul>
       </section>
 
-      <footer className="pt-10 pb-20 text-center text-sm text-neutral-400">
+      <footer className="pt-10 text-sm text-gray-400">
         Built by{' '}
         <a
           href="https://github.com/pavanscales"
           target="_blank"
           rel="noreferrer"
-          className="underline"
+          className="underline hover:text-gray-300 transition"
         >
           pavanscales
         </a>{' '}
