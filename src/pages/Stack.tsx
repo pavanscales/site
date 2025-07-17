@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 const Stack: React.FC = () => {
   return (
     <div
-      className="min-h-screen bg-black text-white max-w-2xl mx-auto px-4 md:px-0 space-y-6 text-base leading-relaxed"
+      className="min-h-screen bg-black text-white max-w-2xl mx-auto px- md:px-0 space-y-6 text-base leading-relaxed"
       style={{ fontFamily: `'JetBrains Mono', monospace` }}
     >
       <Header />
@@ -235,7 +235,6 @@ const Stack: React.FC = () => {
           <li>Optimize for team readability, not cleverness.</li>
         </ul>
       </section>
-
       <footer className="pt-10 pb-20 text-center text-sm text-neutral-400">
         Built by{' '}
         <a
