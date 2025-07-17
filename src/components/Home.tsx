@@ -15,10 +15,10 @@ const projects: Project[] = [
     label: "code",
   },
   {
-    title: "your calendar, reimagined",
-    desc: "The open-source Google Calendar alternative with AI features. Privacy-focused, client-first, and completely under your control.",
+    title: "weekday",
+    desc: "The Google Calendar alternative with AI features. Privacy-focused, client-first, and completely under your control.",
     url: "weekday.vercel.app", // placeholder – update if needed
-    label: "code",
+    label: "site",
   },
   {
     title: "voidrsc",
@@ -27,13 +27,6 @@ const projects: Project[] = [
     label: "code",
   },
 
-  // Existing projects
-  {
-    title: "no fluff",
-    desc: "Platform connecting developers with real-world, high-leverage problems.",
-    url: "https://nofluff.vercel.app",
-    label: "site",
-  },
   {
     title: "jpeg encoder",
     desc: "Ultra-fast JPEG encoder built in pure JavaScript.",
@@ -45,6 +38,12 @@ const projects: Project[] = [
     desc: "SIH Hackathon. Bridges alumni and freshers through smart matchmaking.",
     url: "https://github.com/pavanscales/random",
     label: "code",
+  },
+   {
+    title: "no fluff",
+    desc: "Platform connecting developers with real-world, high-leverage problems.",
+    url: "https://nofluff.vercel.app",
+    label: "site",
   },
 ];
 
