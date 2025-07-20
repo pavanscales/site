@@ -8,7 +8,6 @@ const Stack: React.FC = () => {
       style={{ fontFamily: `'JetBrains Mono', monospace` }}
     >
       <Header />
-
       <h1 className="text-3xl font-bold mt-6">My Stack</h1>
 
       <p>

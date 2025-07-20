@@ -9,6 +9,11 @@ export default {
     "./app/**/*.{ts,tsx}",
     "./public/index.html",
   ],
+  fontFamily: {
+  sans: ['Inter', 'sans-serif'],
+  mono: ['JetBrains Mono', 'monospace'],
+}
+,
   prefix: "",
   theme: {
     container: {
